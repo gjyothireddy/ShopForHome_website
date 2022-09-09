@@ -1,0 +1,92 @@
+<!-- Displaying the All the products -->
+
+        
+        
+        
+
+<div class="card-top container-fluid">
+    <div style="background-image: url('assets\image\image1.png');">
+    <div class="container d-flex">
+        
+        <div class="item">
+            <a (click)="filter('')">
+                <p style="color:coral;font-size: 1.875em">All Products</p>
+                
+            </a>
+        </div>
+
+        <!-- Displaying the home icon -->
+        <div class="item">
+            <a (click)="filter('Home Appliances')">
+                <p style="color:coral;font-size: 1.875em">Home Appliances</p>
+                
+            </a>
+        </div>
+        <!-- Displaying the grocery Icon -->
+        <div class="item">
+            <a (click)="filter('Crockery')">
+                <p style="color:coral;font-size: 1.875em">Crockery</p>
+                
+            </a>
+        </div>
+        <!-- Displaying the Mobile Icon -->
+        <div class="item">
+            <a (click)="filter('Furniture')">
+                <p style="color:coral;font-size: 1.875em">Furniture</p>
+                
+            </a>
+        </div>
+        <!-- Displaying the Fashion Icon -->
+        <div class="item">
+            <a (click)="filter('Decors')">
+                <p style="color:coral;font-size: 1.875em">Decors</p>
+                
+            </a>
+        </div>
+        <!-- Displaying the Beauty Icon -->
+        <div class="item">
+            <a (click)="filter('Carpets')">
+                <p style="color:coral;font-size: 1.875em">Carpets</p>
+                
+            </a>
+        </div>
+        <!-- Displaying the Appliances Icon -->
+        <div class="item">
+            <a (click)="filter('Grocery')">
+                <p style="color:coral; font-size: 1.875em">Grocery</p>
+                
+            </a>
+        </div>
+
+        <!-- Displaying the Sports Icon -->
+        <div class="item">
+            <a (click)="filter('Sports')">
+                
+                <p style="color:white;">h</p>
+            </a>
+        </div>
+        <!-- Displaying the Electronics Icon -->
+        <div class="item">
+            <a (click)="filter('Eletronics')">
+                
+                
+                <p style="color:white;">jn</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <ng-container *ngFor="let product of filterCategory | filter:searchKey:'pname'">
+                <div class="card col-md-3">
+                    <img class="card-img-top" src='../../assets/{{product.url}}'>
+                    <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">
+                        {{product.pname}}</h5>
+                    <p><strong>Price:</strong>{{product.price}}</p>
+                    <button class="btn btn-primary" (click)="addtocart(product)">Add to Cart</button>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>
+</div>

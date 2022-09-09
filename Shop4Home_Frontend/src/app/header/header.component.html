@@ -1,0 +1,50 @@
+<!-- Displaying the Title and required buttons -->
+<header>
+ 
+  <mat-toolbar style="background-color:white;">
+    <mat-toolbar-row>
+      
+      
+      
+      
+      <img src="assets/images/logo11.png" width="200" height="130">
+      <img src="assets/images/logo11.png" width="200" height="130">
+      <img src="assets/images/logo11.png" width="200" height="130">
+      <img src="assets/images/logo11.png" width="200" height="130">
+      <img src="assets/images/logo11.png" width="200" height="130">
+      <img src="assets/images/logo11.png" width="200" height="130">
+      <img src="assets/images/logo11.png" width="200" height="130">
+      <img src="assets/images/logo11.png" width="200" height="130">
+      <!----
+      <img src="assets/images/logo10.jpg" width="150" height="100">
+      <img src="assets/images/logo7.jpg" >
+      <img src="assets/images/logo10.jpg" width="150" height="100">
+      <img src="assets/images/logo7.jpg" >
+      <img src="assets/images/logo10.jpg" width="150" height="100">
+      <img src="assets/images/logo7.jpg" >
+      <h1 style="text-align: center;border-radius:6px;color:purple;"> SHOPPING CART</h1>  --->
+      
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+
+      
+      
+      <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)"
+        placeholder="Search Products">
+        
+      <button mat-raised-button style="margin-right:20px" color="accent" routerLink="products" >Home</button>
+      <button mat-raised-button style="margin-right:20px" color="accent" routerLink="userregister"  >User</button>
+      <button mat-raised-button style="margin-right:20px" color="accent" routerLink="adminsignup" >Admin</button>
+      <div>
+        <button mat-raised-button style="margin-right:20px" color="accent"  routerLink="cart"
+          class="btn btn-primary">
+          <i style="font-size: 30px;" class="fa fa-shopping-cart"></i>
+          <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+        </button>
+      </div>
+      <a mat-raised-button style="margin-right:20px" class="nav-link" routerLink="" 
+        (click)="service.logoutUser()" color="accent">logout</a>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  
+</header>

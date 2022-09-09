@@ -1,0 +1,56 @@
+h1{
+  color:blue;
+  font-size: 40px;
+  text-align: center;
+  
+}
+label{
+  color:#583759;
+  font-size:30px ;
+
+  }
+  h1{
+    flex: 1 1 auto;
+    margin: auto;
+   width: 400px;
+    text-align: center;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    
+   
+    
+}
+table, th,td {
+        border: 1px solid rosybrown;
+        margin-left: 0.5%;
+        margin-right:50%; 
+      }
+.card{
+    align-items: center;
+    background-color: greenyellow ;
+    border-style: outset;
+    border-color: red;
+    border-width: 4px;
+    border-radius: 15px;
+    display: inline-block;
+    width: 400px;
+    padding: 18px;
+    margin: 20px;  
+    margin-left: 25%;
+    margin-right:25%;
+    width: 50%; 
+      }
+  .container{
+  float:right;
+align-items: center;
+background-color:aquamarine;
+border-style: outset;
+border-width: 5px;
+border-radius: 30px;
+margin: 50px;
+width: 400px;
+border:#fff;
+          } 
+          
+
